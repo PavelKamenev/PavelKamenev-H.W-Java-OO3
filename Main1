@@ -1,0 +1,48 @@
+package sample;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student student1 = new Student("Vova", "kirilov", Human.Gender.male, 1, "MK21MP");
+		Student student2 = new Student("Jorfina", "1111", Human.Gender.female, 2, "MK21MP");
+		Student student3 = new Student("Bora", "222222", Human.Gender.male, 3, "MK21MP");
+		Student student4 = new Student("Kirilla", "333333", Human.Gender.female, 4, "MK21MP");
+		Student student5 = new Student("Valera", "44444444", Human.Gender.male, 5, "MK21MP");
+		Student student6 = new Student("Cveta", "5555555", Human.Gender.female, 6, "MK21MP");
+		Student student7 = new Student("Pasha", "66666666", Human.Gender.male, 7, "MK21MP");
+		Student student8 = new Student("Lena", "77777777", Human.Gender.female, 8, "MK21MP");
+		Student student9 = new Student("Valera", "8888888", Human.Gender.male, 9, "MK21MP");
+		Student student10 = new Student("Lera", "999999", Human.Gender.female, 10, "MK21MP");
+		Student student11 = new Student("Sasha", "10101010", Human.Gender.male, 11, "MK21MP");
+		
+		
+		Group group = new Group();
+		try{
+			group.addStudent(student1);
+			group.addStudent(student2);
+			group.addStudent(student3);
+			group.addStudent(student4);
+			group.addStudent(student5);
+			group.addStudent(student6);
+			group.addStudent(student7);
+			group.addStudent(student8);
+			group.addStudent(student9);
+			group.addStudent(student10);
+			System.out.println(group);	
+}catch (GroupOverflowException e){
+	e.printStackTrace();
+	}
+/*		try {
+            Student student100 = group.searchStudentByLastName("kirilov");
+            System.out.println(student100);
+        } catch (StudentNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }	
+		
+        System.out.println(group.removedStudentById(4));
+        System.out.println(group);
+        */
+}
+}
